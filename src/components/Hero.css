@@ -1,0 +1,34 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6vw;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.hero__eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.hero__title {
+  font-size: 56px;
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+}
+.hero__tagline {
+  font-size: 19px;
+  line-height: 155%;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .hero__title {
+    font-size: 38px;
+  }
+}
