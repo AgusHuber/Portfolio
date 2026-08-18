@@ -18,6 +18,8 @@ export const projects = [
     title: "Mi Proyecto Personal",
     description: "Una aplicación web que resuelve un problema específico.",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
-    link: "https://miproyecto.com.ar",
+    github: "https://github.com/tu-usuario/mi-proyecto",
+    screenshots: ["/projects/proyecto1-1.png", "/projects/proyecto1-2.png"],
   },
+  // más proyectos...
 ];

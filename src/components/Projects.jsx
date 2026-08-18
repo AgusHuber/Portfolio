@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import { projects } from "../data/portfolio";
 import "./Projects.css";
 
 function ProjectCard({ project }) {
   return (
-    <a
+    <Link
       className="project-card"
-      href={project.link}
+      to={`/proyectos/${project.id}`}
       target="_blank"
       rel="noreferrer"
     >
@@ -16,7 +17,7 @@ function ProjectCard({ project }) {
           <li key={tech}>{tech}</li>
         ))}
       </ul>
-    </a>
+    </Link>
   );
 }
 
@@ -25,9 +26,8 @@ function Projects() {
     <section id="projects" className="section">
       <h2 className="section__heading">Proyectos</h2>
       <div className="projects__grid">
-        {console.log("projects", projects)}
         {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
     </section>

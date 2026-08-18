@@ -1,0 +1,35 @@
+.project-detail__back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.project-detail h1 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.project-detail__description {
+  font-size: 17px;
+  line-height: 160%;
+  margin-bottom: 20px;
+  max-width: 640px;
+}
+
+.project-detail .about__skills {
+  margin-bottom: 28px;
+}
+
+.project-detail__screenshots {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.project-detail__screenshots img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
